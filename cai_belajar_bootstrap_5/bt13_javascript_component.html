@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- JIKA MENGGUNAKAN VERSI ONLINE -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  -->
+    <!-- JIKA MENGGUNAKAN VERSI OFFLINE -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Javascript Component</title>
+</head>
+
+<body style="height: 2000px;">
+
+    <!-- Header -->
+    <div class="text-center bg-dark text-light p-3">
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse"
+            aria-expanded="false" aria-controls="collapseExample">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-aspect-ratio-fill" viewBox="0 0 16 16">
+                <path
+                    d="M0 12.5v-9A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5zM2.5 4a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 1 0V5h2.5a.5.5 0 0 0 0-1h-3zm11 8a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-1 0V11h-2.5a.5.5 0 0 0 0 1h3z" />
+            </svg>
+        </button>
+        <div class="container collapse" id="collapse">
+            <h1>Welcome To Bootstrap Tutorial</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, tenetur! Accusamus sed illum tenetur dolor
+                inventore, nobis commodi? Sint fuga, culpa rem amet blanditiis incidunt necessitatibus totam, sapiente
+                laborum inventore nisi aut. Maiores inventore fugit eaque, laborum incidunt amet fuga nesciunt quod
+                dolore animi sapiente consequatur voluptatem, delectus cupiditate quae.</p>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Navbar atau Navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/bootstrap_logo.png" width="30px" alt="Bootstrap">
+                Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item active" href="#">UI/UX</a></li>
+                            <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">More</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/2.jpg" class="d-block w-100" alt="image-2">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/3.jpg" class="d-block w-100" alt="image-3">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/4.jpg" class="d-block w-100" alt="image-4">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/5.jpg" class="d-block w-100" alt="image-5">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/6.jpg" class="d-block w-100" alt="image-6">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/7.jpg" class="d-block w-100" alt="image-7">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/8.jpg" class="d-block w-100" alt="image-8">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/9.jpg" class="d-block w-100" alt="image-9">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/10.jpg" class="d-block w-100" alt="image-10">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- End Carousel -->
+
+    <!-- Breadcrumb -->
+    <div class="container mt-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- End Breadcrumb -->
+
+
+    <!-- Card -->
+    <div class="container">
+
+        <h1 class="text-center">My Class</h1>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, tempora!</p>
+
+        <div class="d-flex justify-content-around">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-outline-success">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-outline-warning">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Card -->
+
+    <!-- Pagination -->
+    <div class="container mt-3">
+        <nav aria-label="...">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End Pagination -->
+
+    <!-- Progress Bar -->
+    <div class="container text-center">
+        <h1>My Skills</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, nemo.</p>
+
+        <label for="">HTML</label>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                aria-valuemax="100">90%</div>
+        </div>
+
+        <label for="">CSS</label>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100">80%</div>
+        </div>
+
+        <label for="">Javascript</label>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+                aria-valuemax="100">70%</div>
+        </div>
+    </div>
+    <!-- End Progress Bar -->
+
+    <!-- Modal -->
+    <div class="container mt-3 text-center">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Comments</button>
+    
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!-- JIKA MENGGUNAKAN VERSI ONLINE -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+    <!-- JIKA MENGGUNAKAN VERSI OFFLINE -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+
+</body>
+
+</html>

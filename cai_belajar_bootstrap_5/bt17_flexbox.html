@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- JIKA MENGGUNAKAN VERSI ONLINE -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  -->
+    <!-- JIKA MENGGUNAKAN VERSI OFFLINE -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Flexbox</title>
+  </head>
+  <body>
+    
+    <!-- Display Flex dan Flex Item -->
+    <h4 class="text-center text-primary mt-5 mb-0">Display Flex dan Flex Item</h4>
+    <p class="text-center text-secondary">Ukuran Flex Item akan menyesuaikan sehingga tetep muat dalam containernya</p>
+    <div class="border border-3 border-secondary mx-auto d-flex" style="width: 500px; height: 100px;">
+      <div class="bg-primary">Flex Item ini</div>
+      <div class="bg-primary">Flex Item ini</div>
+      <div class="bg-primary">Flex Item ini</div>
+      <div class="bg-primary">Flex Item ini</div>
+      <div class="bg-primary">Flex Item ini</div>
+      <div class="bg-primary">Flex Item ini</div>
+      <div class="bg-primary">Flex Item ini</div>
+      <div class="bg-primary">Flex Item ini</div>
+      <div class="bg-primary">Flex Item ini</div>
+      <div class="bg-primary">Flex Item ini</div>
+    </div>
+
+    <!-- Flex Row Reverse -->
+    <h4 class="text-center text-primary mt-5 mb-0">Flex Row Reverse</h4>
+    <p class="text-center text-secondary">Mengatur arah item dari kanan baris (row)</p>
+    <div class="border border-3 border-secondary mx-auto d-flex flex-row-reverse" style="width: 500px; height: 100px;">
+      <div class="bg-primary border">Flex Item 1</div>
+      <div class="bg-primary border">Flex Item 2</div>
+      <div class="bg-primary border">Flex Item 3</div>
+    </div>
+
+    <!-- Flex Column Reverse -->
+    <h4 class="text-center text-primary mt-5 mb-0">Flex Column Reverse</h4>
+    <p class="text-center text-secondary">Mengatur arah item dari bawah kolom (column)</p>
+    <div class="border border-3 border-secondary mx-auto d-flex flex-column-reverse" style="width: 500px; height: 100px;">
+      <div class="bg-primary border">Flex Item 1</div>
+      <div class="bg-primary border">Flex Item 2</div>
+      <div class="bg-primary border">Flex Item 3</div>
+    </div>
+
+    <!-- Content Stretch-->
+    <h4 class="text-center text-success mt-5 mb-0">Content Stretch with flex-fill</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex" style="width: 500px; height: 50px;">
+      <div class="bg-success border flex-fill">Flex Item 1</div>
+      <div class="bg-success border flex-fill">Flex Item 2</div>
+      <div class="bg-success border flex-fill">Flex Item 3</div>
+    </div>
+    
+    <!-- Justify Content Between -->
+    <h4 class="text-center text-success mt-5 mb-0">Justify Content Between</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex justify-content-between" style="width: 500px; height: 50px;">
+      <div class="bg-success border">Flex Item 1</div>
+      <div class="bg-success border">Flex Item 2</div>
+      <div class="bg-success border">Flex Item 3</div>
+    </div>
+
+        <!-- Justify Content Around -->
+    <h4 class="text-center text-success mt-5 mb-0">Justify Content Around</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex justify-content-around" style="width: 500px; height: 50px;">
+      <div class="bg-success border">Flex Item 1</div>
+      <div class="bg-success border">Flex Item 2</div>
+      <div class="bg-success border">Flex Item 3</div>
+    </div>
+
+    <!-- Justify Content Evenly -->
+    <h4 class="text-center text-success mt-5 mb-0">Justify Content Evenly</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex justify-content-evenly" style="width: 500px; height: 50px;">
+      <div class="bg-success border">Flex Item 1</div>
+      <div class="bg-success border">Flex Item 2</div>
+      <div class="bg-success border">Flex Item 3</div>
+    </div>
+
+    <!-- Justify Content Center -->
+    <h4 class="text-center text-success mt-5 mb-0">Justify Content Center</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex justify-content-center" style="width: 500px; height: 50px;">
+      <div class="bg-success border">Flex Item 1</div>
+      <div class="bg-success border">Flex Item 2</div>
+      <div class="bg-success border">Flex Item 3</div>
+    </div>
+    
+    <!-- Justify Content End -->
+    <h4 class="text-center text-success mt-5 mb-0">Justify Content End</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex justify-content-end" style="width: 500px; height: 50px;">
+      <div class="bg-success border">Flex Item 1</div>
+      <div class="bg-success border">Flex Item 2</div>
+      <div class="bg-success border">Flex Item 3</div>
+    </div>
+
+    <!-- Justify Content Start -->
+    <h4 class="text-center text-success mt-5 mb-0">Justify Content Start</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex justify-content-start" style="width: 500px; height: 50px;">
+      <div class="bg-success border">Flex Item 1</div>
+      <div class="bg-success border">Flex Item 2</div>
+      <div class="bg-success border">Flex Item 3</div>
+    </div>
+
+    <!-- Align Item Stretch-->
+    <h4 class="text-center text-warning mt-5 mb-0">Align Item Stretch (default)</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex align-items-stretch" style="width: 500px; height: 100px;">
+      <div class="bg-warning border">Flex Item 1</div>
+      <div class="bg-warning border">Flex Item 2</div>
+      <div class="bg-warning border">Flex Item 3</div>
+    </div>
+
+    <!-- Align Item Start-->
+    <h4 class="text-center text-warning mt-5 mb-0">Align Item Start</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex align-items-start" style="width: 500px; height: 100px;">
+      <div class="bg-warning border">Flex Item 1</div>
+      <div class="bg-warning border">Flex Item 2</div>
+      <div class="bg-warning border">Flex Item 3</div>
+    </div>
+
+    <!-- Align Item Center-->
+    <h4 class="text-center text-warning mt-5 mb-0">Align Item Center</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex align-items-center" style="width: 500px; height: 100px;">
+      <div class="bg-warning border">Flex Item 1</div>
+      <div class="bg-warning border">Flex Item 2</div>
+      <div class="bg-warning border">Flex Item 3</div>
+    </div>
+
+    <!-- Align Item End-->
+    <h4 class="text-center text-warning mt-5 mb-0">Align Item End</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex align-items-end" style="width: 500px; height: 100px;">
+      <div class="bg-warning border">Flex Item 1</div>
+      <div class="bg-warning border">Flex Item 2</div>
+      <div class="bg-warning border">Flex Item 3</div>
+    </div>
+
+    <!-- Align Item Baseline-->
+    <h4 class="text-center text-warning mt-5 mb-0">Align Item Baseline</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex align-items-end" style="width: 500px; height: 100px;">
+      <div class="bg-warning border">Flex Item 1</div>
+      <div class="bg-warning border">Flex Item 2</div>
+      <div class="bg-warning border">Flex Item 3</div>
+    </div>
+
+    <!-- Align Self Start-->
+    <h4 class="text-center text-danger mt-5 mb-0">Align Self Start</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex" style="width: 500px; height: 100px;">
+      <div class="bg-danger border">Flex Item 1</div>
+      <div class="bg-danger border align-self-start">Flex Item 2</div>
+      <div class="bg-danger border">Flex Item 3</div>
+    </div>
+
+    <!-- Align Self Center-->
+    <h4 class="text-center text-danger mt-5 mb-0">Align Self Center</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex" style="width: 500px; height: 100px;">
+      <div class="bg-danger border">Flex Item 1</div>
+      <div class="bg-danger border align-self-center">Flex Item 2</div>
+      <div class="bg-danger border">Flex Item 3</div>
+    </div>
+
+    <!-- Align Self End-->
+    <h4 class="text-center text-danger mt-5 mb-0">Align Self End</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex" style="width: 500px; height: 100px;">
+      <div class="bg-danger border">Flex Item 1</div>
+      <div class="bg-danger border align-self-end">Flex Item 2</div>
+      <div class="bg-danger border">Flex Item 3</div>
+    </div>
+
+    <!-- Align Self Baseline-->
+    <h4 class="text-center text-danger mt-5 mb-0">Align Self Baseline</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex" style="width: 500px; height: 100px;">
+      <div class="bg-danger border">Flex Item 1</div>
+      <div class="bg-danger border align-self-baseline">Flex Item 2</div>
+      <div class="bg-danger border">Flex Item 3</div>
+    </div>
+
+    <!-- Auto Margin End -->
+    <h4 class="text-center text-info mt-5 mb-0">Auto Margin End</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex" style="width: 500px; height: 50px;">
+      <div class="bg-info border">Flex Item 1</div>
+      <div class="bg-info border me-auto">Flex Item 2</div>
+      <div class="bg-info border">Flex Item 3</div>
+    </div>
+
+    <!-- Auto Margin Start -->
+    <h4 class="text-center text-info mt-5 mb-0">Auto Margin Start</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex" style="width: 500px; height: 50px;">
+      <div class="bg-info border">Flex Item 1</div>
+      <div class="bg-info border ms-auto">Flex Item 2</div>
+      <div class="bg-info border">Flex Item 3</div>
+    </div>
+
+    <!-- Auto Margin Bottom -->
+    <h4 class="text-center text-info mt-5 mb-0">Auto Margin Bottom</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex flex-column" style="width: 500px; height: 200px;">
+      <div class="bg-info border">Flex Item 1</div>
+      <div class="bg-info border mb-auto">Flex Item 2</div>
+      <div class="bg-info border">Flex Item 3</div>
+    </div>
+
+    <!-- Auto Margin Top -->
+    <h4 class="text-center text-info mt-5 mb-0">Auto Margin Top</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex flex-column" style="width: 500px; height: 200px;">
+      <div class="bg-info border">Flex Item 1</div>
+      <div class="bg-info border mt-auto">Flex Item 2</div>
+      <div class="bg-info border">Flex Item 3</div>
+    </div>
+
+    <!-- Flex Wrap -->
+    <h4 class="text-center text-secondary mt-5 mb-0">Flex Wrap</h4>
+    <p class="text-center text-secondary">Lebar item akan menyesuaikan content jika container penuh akan ke bawah</p>
+    <div class="border border-3 border-secondary mx-auto d-flex flex-wrap" style="width: 500px; height: 100px;">
+      <div class="bg-secondary border">Flex Item ini</div>
+      <div class="bg-secondary border">Flex Item ini</div>
+      <div class="bg-secondary border">Flex Item ini</div>
+      <div class="bg-secondary border">Flex Item ini</div>
+      <div class="bg-secondary border">Flex Item ini</div>
+      <div class="bg-secondary border">Flex Item ini</div>
+      <div class="bg-secondary border">Flex Item ini</div>
+      <div class="bg-secondary border">Flex Item ini</div>
+      <div class="bg-secondary border">Flex Item ini</div>
+      <div class="bg-secondary border">Flex Item ini</div>
+    </div>
+
+    <!-- Order -->
+    <h4 class="text-center text-secondary mt-5 mb-0">Order</h4>
+    <p class="text-center text-secondary">Mengatur urutan item</p>
+    <div class="border border-3 border-secondary mx-auto d-flex" style="width: 500px; height: 100px;">
+      <div class="bg-secondary border order-2">Flex Item 1</div>
+      <div class="bg-secondary border order-3">Flex Item 2</div>
+      <div class="bg-secondary border order-1">Flex Item 3</div>
+    </div>
+
+    <!-- Order Fisrt-->
+    <h4 class="text-center text-secondary mt-5 mb-0">Order First</h4>
+    <p class="text-center text-secondary">Mengatur item mejadi urutan awal</p>
+    <div class="border border-3 border-secondary mx-auto d-flex" style="width: 500px; height: 100px;">
+      <div class="bg-secondary border">Flex Item 1</div>
+      <div class="bg-secondary border">Flex Item 2</div>
+      <div class="bg-secondary border order-first">Flex Item 3</div>
+    </div>
+
+    <!-- Order Last -->
+    <h4 class="text-center text-secondary mt-5 mb-0">Order Last</h4>
+    <p class="text-center text-secondary">Mengatur item menjadi urutan akhir</p>
+    <div class="border border-3 border-secondary mx-auto d-flex" style="width: 500px; height: 100px;">
+      <div class="bg-secondary border">Flex Item 1</div>
+      <div class="bg-secondary border order-last">Flex Item 2</div>
+      <div class="bg-secondary border">Flex Item 3</div>
+    </div>
+
+    <!-- Align Content Start-->
+    <h4 class="text-center text-dark mt-5 mb-0">Align Content Start</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex text-light flex-wrap align-content-start" style="width: 500px; height: 100px;">
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+    </div>
+
+    <!-- Align Content End-->
+    <h4 class="text-center text-dark mt-5 mb-0">Align Content End</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex text-light flex-wrap align-content-end" style="width: 500px; height: 100px;">
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+    </div>
+
+    <!-- Align Content Center-->
+    <h4 class="text-center text-dark mt-5 mb-0">Align Content Center</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex text-light flex-wrap align-content-center" style="width: 500px; height: 100px;">
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+    </div>
+
+    <!-- Align Content Between-->
+    <h4 class="text-center text-dark mt-5 mb-0">Align Content Between</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex text-light flex-wrap align-content-between" style="width: 500px; height: 100px;">
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+    </div>
+    
+    <!-- Align Content Around-->
+    <h4 class="text-center text-dark mt-5 mb-0">Align Content Around</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex text-light flex-wrap align-content-around" style="width: 500px; height: 100px;">
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+    </div>
+
+    <!-- Align Content Stretch-->
+    <h4 class="text-center text-dark mt-5 mb-0">Align Content Stretch</h4>
+    <div class="border border-3 border-secondary mx-auto d-flex text-light flex-wrap align-content-stretch" style="width: 500px; height: 100px;">
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+      <div class="bg-dark border">Flex Item</div>
+    </div>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!-- JIKA MENGGUNAKAN VERSI ONLINE -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+    <!-- JIKA MENGGUNAKAN VERSI OFFLINE -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    
+  </body>
+</html>
